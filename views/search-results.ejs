@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <h1 class="heading font-weight-bolder text-dark text-center my-3">
+      URL SHORTENER AND SEARCH OPTIMIZER
+    </h1>
+    <div
+      class="col-md-7 my-5 mx-auto shadow"
+      style="background-color: white; word-wrap: break-word"
+    >
+      <button
+        type="button"
+        onclick="goBack()"
+        class="btn text-white font-weight-bolder btn-purple btn-block my-3"
+      >
+        Back
+      </button>
+      <div class="container text-center">
+        <h3><b>SEARCH RESULTS FOR '<%=query %>'</b></h3>
+      </div>
+      <br />
+      <% if (results.length === 0) { %>
+      <p>No results found &#128577;... Try Searching different text.</p>
+      <% } else { %>
+      <ul>
+        <% results.forEach((result) => { %>
+        <li>
+          Shortened Link -
+          <i
+            ><a href="<%= result.originalUrl %>" target="_blank"
+              ><%= result.shortUrl %></a
+            ></i
+          >
+        </li>
+        <li>
+          Original Link -
+          <i
+            ><a href="<%= result.originalUrl %>" target="_blank"
+              ><%= result.originalUrl %></a
+            ></i
+          >
+        </li>
+        <li>Keywords - <%= result.keywords %></li>
+        <br />
+        <% }) %>
+      </ul>
+      <% } %>
+    </div>
+  </div>
+</div>
+<script>
+  function goBack() {
+    window.location.href = '/';
+  }
+</script>

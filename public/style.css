@@ -1,0 +1,19 @@
+body{
+    background-color:rgb(248, 226, 245);
+}
+.bg-purple {
+    background-color:purple;
+}
+.heart-symbol {
+    color: red;
+}
+.btn-purple {
+    background-color: purple;
+}
+.btn-purple:hover {
+    background-color: darkmagenta;
+}
+.btn-purple:active {
+    color: black;
+    background-color: lightgray;
+}

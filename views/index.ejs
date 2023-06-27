@@ -1,0 +1,129 @@
+<div class="container">
+  <div class="row">
+    <h1 class="heading font-weight-bolder text-dark text-center my-3">
+      URL SHORTENER AND SEARCH OPTIMIZER
+    </h1>
+    <% if(typeof(error)!=='undefined'){ %>
+    <div
+      class="alert col-md-7 mx-auto alert-warning alert-dismissible fade show"
+      role="alert"
+    >
+      <strong><%= error %></strong>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    <% } %> <% if(typeof(success)!=='undefined'){ %>
+      <div class="alert col-md-7 mx-auto alert-success alert-dismissible fade show" role="alert">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            Your Shortened URL is <strong><%= success %></strong>
+          </div>
+          <div class="text-end">
+            <button type="button" class="btn btn-copy" onclick="copyToClipboard('<%= success %>')" style="color: white; background: blue; border-radius: 15%;">
+              Copy
+            </button>
+          </div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      
+    <% } %>
+    <div class="col-md-7 my-5 mx-auto">
+      <form
+        action="/search"
+        method="GET"
+        class="form-check shadow p-4"
+        style="background-color: white"
+      >
+        <div class="form-group py-2 border-0 border-bottom">
+          <input
+            type="text"
+            name="q"
+            class="form-control my-3"
+            style="border-color: pink"
+            placeholder="Search URL/Custom URL/Keywords"
+          />
+        </div>
+        <div class="form-group">
+          <button
+            type="submit"
+            class="btn text-white font-weight-bolder btn-purple btn-block my-3"
+          >
+            SEARCH
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-md-7 my-5 mx-auto">
+      <form
+        action="/"
+        method="POST"
+        class="form-check shadow p-4"
+        style="background-color: white"
+      >
+        <div class="form-group py-2 border-0 border-bottom">
+          <label for="originalUrl">Enter your original URL:</label>
+          <input
+            type="url"
+            name="originalUrl"
+            class="form-control my-3"
+            placeholder="URL"
+            style="border-color: pink"
+          />
+        </div>
+
+        <div class="form-group py-4">
+          <label for="shortUrl">Enter custom short URL Name:</label>
+          <div class="form-group border-0 border-bottom d-flex py-2">
+            <p class="mt-2 pl-2">https://<%= host %>/</p>
+            <input
+              type="text"
+              name="name"
+              class="ml-3 form-control mx-2"
+              placeholder="Short URL"
+              style="height: 40px; border-color: pink"
+            />
+          </div>
+        </div>
+        <div class="form-group py-1">
+          <label for="keywords">Enter Keywords for your URL:</label>
+          <div class="form-group border-0 border-bottom d-flex">
+            <input
+              type="text"
+              name="keywords"
+              class="ml-2 form-control my-2"
+              placeholder="Keywords"
+              style="height: 40px; padding: auto; border-color: pink"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button
+            type="submit"
+            class="btn text-white font-weight-bolder btn-purple btn-block my-3"
+          >
+            SHORTEN URL
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+   src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"
+   function copyToClipboard(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        alert('Text copied!');
+      })
+      .catch((error) => {
+        console.error('Copy failed:', error);
+      });
+  }
+</script>
