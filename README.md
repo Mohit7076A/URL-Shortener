@@ -6,6 +6,14 @@
 4. public : style.css - stylesheet
 5. views : contains the files for frontend - index.ejs, header.ejs, layout.ejs, search-results.ejs.
 
+# Working Demo 
+
+
+
+https://github.com/Mohit7076A/URL-Shortener/assets/98163995/c2e722a3-287e-4b09-a99b-671656c62d92
+
+
+
 # How to run:-
 
 I made the project in VS code which contains many snippets and extensions. But you can run in any compiler.
