@@ -27,10 +27,24 @@ Top 2 which are compulsory, 3-7 are special features:-
 1. Shortening the long URLs.
 2. Search functionality which searches a given text through the URLs and notes.
 3. Custom URL name - Instead of using nanoid/shortid for generating shortened link, this project generate user defined custom URL which is easier for them to remember.
+
+![Screenshot (122)](https://github.com/Mohit7076A/URL-Shortener/assets/98163995/f0e97465-5d56-417e-9bf2-0d9e8b7657bf)
+
 4. Good UI - If not one of the best, I tried to make UI better than average of what I have seen in the Internet.
+
+![screencapture-localhost-5000-2023-06-28-22_17_12](https://github.com/Mohit7076A/URL-Shortener/assets/98163995/51d2597f-ed0c-4f41-acc4-eedf1cd818ee)
+
+  
 5. Alert/Success message - Alert message for any error by the client side and Success message for successful shortening of URL.
+
+![Screenshot (124)](https://github.com/Mohit7076A/URL-Shortener/assets/98163995/a3491ed9-33b9-4b72-b38c-fc3d1ffe08ff)
+![Screenshot (125)](https://github.com/Mohit7076A/URL-Shortener/assets/98163995/a3f27881-e0db-4b32-b849-65633cf4e4e8)
+![Screenshot (123)](https://github.com/Mohit7076A/URL-Shortener/assets/98163995/fae1c117-e082-49bd-b7b5-df327864cc4c)
+
 6. Dedicated copy button just after the shortened URL so user doesn't need to select the whole by mouse.
 7. Search Results - It shows all URLs, whether shortened or original and keywords which has searched text in it.
+   
+![Screenshot (126)](https://github.com/Mohit7076A/URL-Shortener/assets/98163995/e430143f-d2c5-4d03-a31d-9eca03bf0db7)
 
 
 # Internal Working of the project:-
