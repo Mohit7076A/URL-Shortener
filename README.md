@@ -26,7 +26,6 @@ Once the modules are installed simply run the server.js file and go to localhost
 Top 2 which are compulsory for this project
 1. Shortening the long URLs.
 2. Search functionality which searches a given text through the URLs and notes.
-
 Other implemented unique features
 3. Custom URL name - Instead of using nanoid/shortid for generating shortened link, this project generate user defined custom URL which is easier for them to remember.
 4. Good UI - If not one of the best, I tried to make UI better than average of what I have seen in the Internet.
