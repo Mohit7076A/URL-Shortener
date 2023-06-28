@@ -35,6 +35,46 @@ Top 2 which are compulsory, 3-7 are special features:-
 
 # Internal Working of the project:-
 
+First I installed all the required solftwares and packages. For API testing , I used Insomnia Tool which is available free of cost. As I said above I used VS code for writing my code.
+
+For managing database I used MongoDB compass, as I have connected to local bdatabase only.
+
+The schema of my collection have following:
+1. name : custom name input by user.
+2. originalUrl : original long url of the website
+3. shortUrl : shortened url
+4. keywords : important words describing the website.
+Type of all are String and required : true.
+
+**Generation of Shortened Link->**
+
+The basic appraoch for the generation of shortened url is take the user's input of custom name and check whether it is available in the database, as I set customurl to be unique. If it is found, then request the user to input different name and no need change if it isnt. Then we would create shortened url by adding that name to host. 
+
+![Screenshot (119)](https://github.com/Mohit7076A/URL-Shortener/assets/98163995/66988102-db68-419d-a6c9-8a5dc9f0b1ab)
+
+
+For example, if host is http://localhost:3000 and name is 'my_website' then shortened url will be http://localhost:3000/my_website.
+
+Then the whole data is added to the MongoDB collection using Mongoose library.
+
+![Screenshot (120)](https://github.com/Mohit7076A/URL-Shortener/assets/98163995/d554d34f-63a8-4383-8580-7e6b9457d571)
+
+
+Now if the user render to the shortened url, we make a request to the server to find the name after the host in this shortened url in the database, if it is present then it will render user to the orginal link  and if it is not , then we will send an error that this url is not found.
+![Screenshot (117)](https://github.com/Mohit7076A/URL-Shortener/assets/98163995/dfd83047-1e7d-499c-9caa-41a277132a9a)
+
+
+**Search Functionality**
+
+For searching, I take the search query from the user input and simply used 'Find' operation in the MongoDB collection and find whether the given query is found in any of the custom name, url or keywords.
+
+![Screenshot (116)](https://github.com/Mohit7076A/URL-Shortener/assets/98163995/75be1370-d273-4cdd-af2b-d88e56249111)
+
+
+If found, we would add the results to searchResults list and further work will be done by frontend in search-results.ejs where no results will be displayed if length of list is zero and using foreach loop we would display the results to the user.
+
+![Screenshot (115)](https://github.com/Mohit7076A/URL-Shortener/assets/98163995/30953b45-92b7-44fe-b6fe-d35c25a9d419)
+
 # Resources/References:-
 
 Our mentors provided this 5-day plan after session-1 -
@@ -75,6 +115,6 @@ Manytimes I ran through errors, which I solved from StackOverflow, github and Ch
 
 A simple website was made through NodeJS , MongoDB, EJS, HTML and CSS. This website could be improved by hosting , making UI better , etc. but overall it is still responsive and working perfect. 
 
-Before this project, I only knew some basic HTML and CSS, and a bit of Javascript(variables and loops). I learned whole new consepts for making backends of a website and linking it with database and the frontend. About database, MongoDB is the next thing I learned which I find easy to use than MySQL. NodeJS was also a new word for me, but I now I know basics of NodeJS and express JS. I want to furthur increase my learninng by building more of such projects and learning new things which would be related to those.
+Before this project, I only knew some basic HTML and CSS, and a bit of Javascript(variables and loops). I learned whole new consepts for making backends of a website and linking it with database and the frontend. About database, MongoDB is the next thing I learned which I find easy to use than MySQL. NodeJS was also a new word for me, but I now I know basics of NodeJS and express JS. I want to further increase my learninng by building more of such projects and learning new things which would be related to those.
 
 I hope you would like this project. Thanks for watching 😊...
