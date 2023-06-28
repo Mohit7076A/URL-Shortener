@@ -6,7 +6,7 @@
 4. public : style.css - stylesheet
 5. views : contains the files for frontend - index.ejs, header.ejs, layout.ejs, search-results.ejs.
 
-__**How to run:-**__
+#__**How to run:-**__
 
 I made the project in VS code which contains many snippets and extensions. But you can run in any compiler.
 Modules required are -
