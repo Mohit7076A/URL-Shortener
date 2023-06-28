@@ -34,3 +34,47 @@ Top 2 which are compulsory, 3-7 are special features:-
 
 
 **Internal Working of the project:-**
+
+**Resources/References:-**
+
+Our mentors provided this 5-day plan after session-1 -
+
+*Day 0: Introduction to Web Development HTML & CSS*
+- Introduction to Web Development https://youtu.be/l1EssrLxt7E
+
+*Day 1: HTML and CSS*
+- Crash Course https://youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G
+- CSS Full Course(Optional) https://www.youtube.com/watch?v=yfoY53QXEnI
+- HTML Full Course(Optional) https://www.youtube.com/watch?v=pQN-pnXPaVg
+
+*Day 2: JavaScript Basics*
+- JavaScript Basics https://youtu.be/W6NZfCO5SIk
+- JavaScript Full Course (Optional) https://www.youtube.com/watch?v=PkZNo7MFNFg
+
+*Day 3: Node.js and Express EJS Basics*
+- NodeJS Basics https://youtu.be/TlB_eWDSMt4
+- ExpressJS Basics https://youtu.be/SccSCuHhOw0
+- EJS Basics https://youtu.be/VM-2xSaDxJc
+- NodeJS & Express Full Course (Optional) https://youtu.be/Oe421EPjeBE
+
+*Day 4: MongoDB and Project Setup*
+- MongoDB Basics check out the setup all others optional https://youtu.be/oSIv-E60NiU
+- Mongoose Basics https://youtu.be/DZBGEVgL2eE
+
+*Day 5: Revision from Day 1-4(MERN Stack) go through for react part*
+- MERN Stack(MongoDB, Express, React, NodeJS) https://youtu.be/7CqJlxBYj-M
+
+Additionally following library's documentations - MongoDB, freecodecamp, NodeJS, bootstrap.
+
+The custom url idea is inspired from this youttube channel - https://www.youtube.com/@fullyworldwebtutorials/featured
+
+Manytimes I ran through errors, which I solved from StackOverflow, github and ChatGPT.
+
+
+**Conclusion and learning takeaways:-**
+
+A simple website was made through NodeJS , MongoDB, EJS, HTML and CSS. This website could be improved by hosting , making UI better , etc. but overall it is still responsive and working perfect. 
+
+Before this project, I only knew some basic HTML and CSS, and a bit of Javascript(variables and loops). I learned whole new consepts for making backends of a website and linking it with database and the frontend. About database, MongoDB is the next thing I learned which I find easy to use than MySQL. NodeJS was also a new word for me, but I now I know basics of NodeJS and express JS. I want to furthur increase my learninng by building more of such projects and learning new things which would be related to those.
+
+I hope you would like this project. Thanks for watching 😊...
