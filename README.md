@@ -27,8 +27,11 @@ Top 2 which are compulsory for this project
 1. Shortening the long URLs.
 2. Search functionality which searches a given text through the URLs and notes.
 Other implemented unique features
-3. Custom URL name - Instead of using nanoid/shortid for generating shortened link, this porject us
-4. Good UI - If not one of the best, I try to make UI better than average of what I have seen in the Internet.
+3. Custom URL name - Instead of using nanoid/shortid for generating shortened link, this project generate user defined custom URL which is easier for them to remember.
+4. Good UI - If not one of the best, I tried to make UI better than average of what I have seen in the Internet.
 5. Alert/Success message - Alert message for any error by the client side and Success message for successful shortening of URL.
 6. Dedicated copy button just after the shortened URL so user doesn't need to select the whole by mouse.
 7. Search Results - It shows all URLs, whether shortened or original and keywords which has searched text in it.
+
+
+**Internal Working of the project:-**
