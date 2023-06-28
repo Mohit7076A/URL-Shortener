@@ -18,7 +18,7 @@ Modules required are -
 6. dotenv
 7. bootstrap
 
-In addition to this you will require a .env file which ins not included in this respository that contains the MongoDB URI, I used local URI for this project.
+In addition to this you will require a .env file which is not included in this respository that contains the MongoDB URI, I used local URI for this project.
 Once the modules are installed simply run the server.js file and go to localhost:5000 in your browser which will open the website.
 
 **Salient feature of this project**
