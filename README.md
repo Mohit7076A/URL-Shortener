@@ -66,7 +66,7 @@ Our mentors provided this 5-day plan after session-1 -
 
 Additionally following library's documentations - MongoDB, freecodecamp, NodeJS, bootstrap.
 
-The custom url idea is inspired from this youttube channel - https://www.youtube.com/@fullyworldwebtutorials/featured
+The custom url idea is inspired from this youtube channel - https://www.youtube.com/@fullyworldwebtutorials/featured
 
 Manytimes I ran through errors, which I solved from StackOverflow, github and ChatGPT.
 
