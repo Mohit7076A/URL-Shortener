@@ -6,7 +6,7 @@
 4. public : style.css - stylesheet
 5. views : contains the files for frontend - index.ejs, header.ejs, layout.ejs, search-results.ejs.
 
-#__**How to run:-**__
+# How to run:-
 
 I made the project in VS code which contains many snippets and extensions. But you can run in any compiler.
 Modules required are -
@@ -21,7 +21,7 @@ Modules required are -
 In addition to this you will require a .env file which is not included in this respository that contains the MongoDB URI, I used local URI for this project.
 Once the modules are installed simply run the server.js file and go to localhost:5000 in your browser which will open the website.
 
-**Salient feature of this project**
+# Salient feature of this project
 
 Top 2 which are compulsory, 3-7 are special features:- 
 1. Shortening the long URLs.
@@ -33,9 +33,9 @@ Top 2 which are compulsory, 3-7 are special features:-
 7. Search Results - It shows all URLs, whether shortened or original and keywords which has searched text in it.
 
 
-**Internal Working of the project:-**
+# Internal Working of the project:-
 
-**Resources/References:-**
+# Resources/References:-
 
 Our mentors provided this 5-day plan after session-1 -
 
@@ -71,7 +71,7 @@ The custom url idea is inspired from this youttube channel - https://www.youtube
 Manytimes I ran through errors, which I solved from StackOverflow, github and ChatGPT.
 
 
-**Conclusion and learning takeaways:-**
+# Conclusion and learning takeaways:-
 
 A simple website was made through NodeJS , MongoDB, EJS, HTML and CSS. This website could be improved by hosting , making UI better , etc. but overall it is still responsive and working perfect. 
 
